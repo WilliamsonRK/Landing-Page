@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #333;
+  /* background: linear-gradient(#373b44, #4286f4); */
+
+  color: white;
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  /* margin: 20px 0 ; */
+}
+
+/* from ripple effect */
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-size: 18px;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #0162c8, #55e7fc);
+  border-radius: 40px;
+}
+span {
+  position: absolute;
+  background: white;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 0.8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+/* //paragrapgh */
+/* p {
+  box-sizing: border-box;
+  padding: 2em;
+  width: 80%;
+  margin: 30px auto;
+  line-height: 1.5;
+} */
+
+.navbar {
+  /* my code */
+  /* z-index: 1; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(65, 16, 8, 0.877);
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 8vh;
+  z-index: 1;
+  /* top:0; */
+  /* position: fixed; */
+}
+.img-circular {
+  width: 100px;
+  height: 100px;
+  background-image: url("./cute.jpg");
+  background-size: cover;
+  display: block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+/* asymmetry */
+
+/* .img-circular{
+    width: 200px;
+    height: 200px;
+    background-image:  url("./cute.jpg");
+    background-size: cover;
+    display: block;
+    border-top-left-radius: 100px;
+    -webkit-border-top-left-radius: 100px;
+    -moz-border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    -webkit-border-bottom-right-radius: 100px;
+    -moz-border-bottom-right-radius: 100px;
+   } */
+.logo {
+  color: rgb(209, 204, 204);
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: rgb(209, 204, 204);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.nav-links li a:hover {
+  color: rgb(63, 15, 238);
+}
+
+header {
+  display: flex;
+  background: linear-gradient();
+  background-color: red;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  padding: 2rem;
+  border: 1px white solid;
+  /* height: 100vh; */
+  /* margin: 10px 0; */
+}
+
+header h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+header p .word {
+  letter-spacing: 25px;
+  font-size: 2rem;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(209, 204, 204);
+  border-radius: 5px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-container .box {
+  width: 30%;
+}
+
+.flex-container .box-1 {
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  width: 50%;
+  padding: 2rem 4rem;
+  right: 10px;
+}
+
+/* .flex-container .box-1 h1 p{
+    text-align: right;
+} */
+.flex-container .box-1 .heading {
+  font-weight: bold;
+  text-align: right;
+}
+.flex-container .box-1 .para {
+  text-align: right;
+  letter-spacing: 2px;
+}
+
+
+.flex-container .box-2 {
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  width: 50%;
+  padding: 2rem 4rem;
+  right: 10px;
+}
+.flex-container .box-2 .heading {
+  font-weight: bold;
+
+  text-align: left;
+}
+
+.flex-container .box-2 ul {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.contact {
+  font: bold 2rem;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  letter-spacing: 2px;
+}
+i {
+  color: white;
+}
